@@ -1,0 +1,268 @@
+.body__title {
+  position: relative;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  max-width: 100%;
+  font-weight: 500;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0px auto;
+  padding: 10px 0 200px 0;
+  bottom: -60px;
+  z-index: 0;
+  font-size: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  text-shadow: 1px 1px 0 green, -1px -1px 0 green, 1px -1px 0 green, -1px 1px 0 green, 1px 1px 0 green;
+  line-height: 160px;
+}
+.body__title::first-letter {
+  border: green solid 4px;
+}
+@media (max-width: 1454px) {
+  .body__title {
+    line-height: 100px;
+    font-size: 68px;
+    max-width: 500px;
+    margin: 0px auto;
+  }
+}
+@media (max-width: 1092px) {
+  .body__title {
+    font-size: 54px;
+    line-height: 93px;
+  }
+  .body__card {
+    margin: 0px auto;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .body__title {
+    font-size: 45px;
+    padding: 0;
+    margin: 10px 0 100px 0;
+    line-height: 79px;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    max-width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.body__card {
+  padding: 100px 0 0 0;
+}
+.body__grid {
+  padding: 230px 0;
+}
+.body__grid__content {
+  display: -ms-grid;
+  display: grid;
+  padding: 5% 0 0 0;
+  -ms-grid-columns: auto 20px auto;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+.body__grid__title {
+  text-align: center;
+  font-size: 32px;
+}
+.body__grid__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  gap: 10px;
+}
+.body__grid__block img {
+  height: 100%;
+}
+.body__grid__block__title {
+  padding: 0 0 15px 0;
+  font-size: 21px;
+}
+.body__grid__block__text {
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  font-size: 16px;
+}
+@media (max-width: 1183px) {
+  .body__grid__content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .body__grid__block {
+    padding: 10px 15px;
+    max-width: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px auto;
+  }
+  .body__grid__block .body__grid__block__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body__grid__block img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .body__grid__block__title {
+    text-align: center;
+    font-size: 19px;
+  }
+  .body__grid__block__text {
+    padding: 15px 0 0 0;
+    text-align: center;
+    line-height: 26px;
+    letter-spacing: 0.2px;
+  }
+}
+.body__contact {
+  margin: 0px auto;
+}
+.body__contact__content {
+  background: white;
+  padding: 40px 0;
+  color: #000;
+}
+.body__contact__content__title {
+  text-align: center;
+  color: #000;
+  font-size: 53px;
+  padding: 0 0 30px 0;
+  line-height: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.body__contact__content__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+@media (max-width: 820px) {
+  .body__contact__content__grid {
+    padding: 0 15px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+.body__contact__content__grid .body__contact__content__grid__block__0 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.body__contact__content__grid__block__img {
+  padding: 0 0 5px 0;
+}
+.body__contact__content__grid__block__name {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0 0 5px 0;
+}
+.body__contact__content__grid__block__text {
+  line-height: 21px;
+}
+.body__service {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 50px 0;
+}
+.body__service__content__title {
+  text-align: center;
+  font-size: 54px;
+  padding: 0 0 30px 0;
+}
+.body__service__content__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1024px) {
+  .body__service__content__flex {
+    margin: 0px auto;
+    max-width: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.body__service__content__flex__block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+}
+.body__service__content__flex__block__title {
+  font-size: 32px;
+  padding: 12px 0px;
+  text-align: center;
+}
+.body__service__content__flex__block__buy {
+  background: white;
+  color: #000;
+  font-size: 32px;
+  padding: 12px 0px;
+  text-align: center;
+  max-width: 100%;
+}
+.body__service__content__flex__block__text {
+  line-height: 24px;
+  font-size: 18px;
+  padding: 0 22.5px;
+  margin: 20px 0 30px 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+.body__service__content__flex__block__button {
+  text-align: center;
+  padding: 10px 22.5px;
+}
+.body__service__content__flex__block__button button {
+  font-size: 28px;
+  background: white;
+  border-radius: 10px;
+  padding: 10px 30px;
+  width: 100%;
+}

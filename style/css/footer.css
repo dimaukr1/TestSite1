@@ -1,0 +1,9 @@
+.footer__content {
+  background: #313131;
+}
+.footer__title {
+  color: white;
+  text-align: center;
+  padding: 38px 0;
+  font-size: 19px;
+}

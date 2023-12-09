@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans&display=swap");
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  position: relative;
+  background: url("../AutoBackground.png") 0 0/100% 100% no-repeat fixed;
+  z-index: 6;
+  margin: 0px auto;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  background: rgba(6, 97, 6, 0.4);
+  z-index: 1;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+[class*=__container] {
+  max-width: 1310px;
+  margin: 0px auto;
+  padding: 0 15px;
+}
+
+.animate__slow {
+  -webkit-animation-duration: 21s;
+          animation-duration: 21s;
+}
+
+.hidden {
+  overflow-y: hidden;
+}
+.hidden * {
+  overflow-y: hidden;
+}

@@ -1,0 +1,139 @@
+.header {
+    &__container {
+        max-width: 1500px;
+        margin: 0px auto;
+        padding: 0 15px;
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  
+      }
+    &__logo {
+        text-transform: uppercase;
+        font-size: 24px;
+        a {
+            color: white;
+        }
+
+    }
+    &__menu {
+        position: relative;
+        .menu__list { 
+            position: relative;
+            z-index: 40;
+            display: flex;
+            gap: 15px;
+            li {
+              
+
+                .menu__link {  
+                    font-size: 18px;
+                    color: white;
+                }
+            } 
+            
+        }
+} 
+
+@media(max-width: 715px) {
+background: black;
+align-items: center;    
+    position: fixed;
+    width: 100%;
+   height: 60px;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    
+    ::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+     
+      z-index: 1;
+    }
+   
+    .NavBurger {
+        align-items: center;
+    }
+    .burger__menu {
+        
+      display: block;
+      position: relative;
+      align-self: center;
+      width: 30px;
+      height: 20px;
+    }
+    .burger__menu::after,
+    .burger__menu::before {
+      content: "";
+      background: white;
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      left: 0;
+    }
+    .header__logo
+    {
+        padding: 10px 0;
+    }
+    .burger__menu span {
+      position: absolute;
+      background: white;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      z-index: 0;
+    }
+    .burger__menu::before {
+        top: 0;
+      }
+      .burger__menu::after {
+        bottom: 0;
+      }
+      
+     
+      .menu__list {
+        position: fixed;
+        background: rgb(0, 114, 0);
+        width: 100%;
+        height: 200%;
+        top:  45.6px;
+        left: -100%;
+        padding: 0px 0 0 0;
+      
+        z-index: 0;
+        transition-duration:0.5s ;
+        flex-direction: column;
+        text-align: center;
+        
+      }  
+      
+       .menu__list {
+        padding: 40px 0 0 0;
+        display: flex;
+        
+       .menu__link {
+        
+     padding: 9px 8px 9px 8px;
+      font-size: 21px;
+      line-height: 24px;
+      
+      a {color: white; }
+    
+       }
+       
+     
+    }
+    .Active {
+        left: 0;
+        }
+   
+}
+}
